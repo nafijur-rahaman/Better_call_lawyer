@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Footer = () => {
+const Booking = () => {
     return (
         <div>
-            {/* this is footer */}
+            this is booking
         </div>
     );
 };
 
-export default Footer;
+export default Booking;
