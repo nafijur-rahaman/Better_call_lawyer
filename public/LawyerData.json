@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "image": "https://randomuser.me/api/portraits/men/45.jpg",
+    "name": "Barrister Tahmid Rahman",
+    "speciality": "Criminal Law",
+    "experience": "12 years",
+    "license_number": "BD-CR-120934",
+    "fee": "৳5000/hour",
+    "availability": ["Sunday", "Tuesday", "Thursday"]
+  },
+  {
+    "id": 2,
+    "image": "https://randomuser.me/api/portraits/women/32.jpg",
+    "name": "Advocate Nusrat Jahan",
+    "speciality": "Family Law",
+    "experience": "8 years",
+    "license_number": "BD-FL-098712",
+    "fee": "৳4000/hour",
+    "availability": ["Monday", "Wednesday", "Saturday"]
+  },
+  {
+    "id": 3,
+    "image": "https://randomuser.me/api/portraits/men/21.jpg",
+    "name": "Md. Arif Hossain",
+    "speciality": "Property Law",
+    "experience": "10 years",
+    "license_number": "BD-PL-567834",
+    "fee": "৳4500/hour",
+    "availability": ["Sunday", "Tuesday", "Friday"]
+  },
+  {
+    "id": 4,
+    "image": "https://randomuser.me/api/portraits/men/67.jpg",
+    "name": "Advocate Salman Kabir",
+    "speciality": "Corporate Law",
+    "experience": "11 years",
+    "license_number": "BD-CL-675438",
+    "fee": "৳6000/hour",
+    "availability": ["Monday", "Wednesday"]
+  },
+  {
+    "id": 5,
+    "image": "https://randomuser.me/api/portraits/women/15.jpg",
+    "name": "Barrister Mahjabeen Chowdhury",
+    "speciality": "Immigration Law",
+    "experience": "7 years",
+    "license_number": "BD-IL-789021",
+    "fee": "৳5500/hour",
+    "availability": ["Sunday", "Tuesday", "Thursday"]
+  },
+  {
+    "id": 6,
+    "image": "https://randomuser.me/api/portraits/men/12.jpg",
+    "name": "Advocate Rafiq Ahmed",
+    "speciality": "Tax Law",
+    "experience": "9 years",
+    "license_number": "BD-TL-902134",
+    "fee": "৳4800/hour",
+    "availability": ["Saturday", "Monday", "Wednesday"]
+  },
+  {
+    "id": 7,
+    "image": "https://randomuser.me/api/portraits/women/55.jpg",
+    "name": "Advocate Shirin Sultana",
+    "speciality": "Labour Law",
+    "experience": "6 years",
+    "license_number": "BD-LL-345221",
+    "fee": "৳4200/hour",
+    "availability": ["Tuesday", "Thursday"]
+  },
+  {
+    "id": 8,
+    "image": "https://randomuser.me/api/portraits/men/39.jpg",
+    "name": "Md. Mizanur Rahman",
+    "speciality": "Environmental Law",
+    "experience": "5 years",
+    "license_number": "BD-EL-654312",
+    "fee": "৳4000/hour",
+    "availability": ["Sunday", "Wednesday", "Friday"]
+  },
+  {
+    "id": 9,
+    "image": "https://randomuser.me/api/portraits/women/44.jpg",
+    "name": "Advocate Ruma Khatun",
+    "speciality": "Civil Litigation",
+    "experience": "13 years",
+    "license_number": "BD-CL-456732",
+    "fee": "৳5200/hour",
+    "availability": ["Monday", "Thursday", "Saturday"]
+  },
+  {
+    "id": 10,
+    "image": "https://randomuser.me/api/portraits/men/58.jpg",
+    "name": "Barrister Anisur Rahman",
+    "speciality": "Constitutional Law",
+    "experience": "15 years",
+    "license_number": "BD-CN-876321",
+    "fee": "৳7000/hour",
+    "availability": ["Sunday", "Tuesday"]
+  },
+  {
+    "id": 11,
+    "image": "https://randomuser.me/api/portraits/women/11.jpg",
+    "name": "Advocate Tamanna Haque",
+    "speciality": "Intellectual Property Law",
+    "experience": "6 years",
+    "license_number": "BD-IP-113342",
+    "fee": "৳4600/hour",
+    "availability": ["Wednesday", "Friday", "Saturday"]
+  },
+  {
+    "id": 12,
+    "image": "https://randomuser.me/api/portraits/men/28.jpg",
+    "name": "Advocate Shahriar Khan",
+    "speciality": "Cyber Law",
+    "experience": "4 years",
+    "license_number": "BD-CY-774221",
+    "fee": "৳4300/hour",
+    "availability": ["Monday", "Thursday", "Saturday"]
+  }
+]
