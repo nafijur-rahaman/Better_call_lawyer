@@ -128,7 +128,7 @@ const Booking = () => {
                 <div className="booking-card text-center">
                   <button
                     onClick={() => handleRemoveData(data.id)}
-                    className="text-[#ff0000] border border-[#ff0000] w-full px-5 py-2 rounded-3xl cursor-pointer font-semibold mt-5"
+                    className="text-[#ff0000] border border-[#ff0000] hover:bg-[#ff0000] hover:text-white w-full px-5 py-2 rounded-3xl cursor-pointer font-semibold mt-5"
                   >
                     Cancel Appointment Now
                   </button>
