@@ -18,7 +18,17 @@ const Footer = () => {
 
 
 <div className="w-full h-px border-t border-dashed border-[#f7f7f730] my-4"></div>
-
+  <div className="social-logo flex gap-10 ">
+    <a href="https://nafijurrahaman.netlify.app/" target="_blank" rel="noopener noreferrer">
+      <img src="/facebook.png" alt="Facebook" className="w-6 h-6" />
+    </a>
+    <a href="https://github.com/nafijur-rahaman" target="_blank" rel="noopener noreferrer">
+      <img src="/github.png" alt="Twitter" className="w-6 h-6" />
+    </a>
+    <a href="https://linkedin.com/in/nafijur-rahaman" target="_blank" rel="noopener noreferrer">
+      <img src="/linkedin.png" alt="LinkedIn" className="w-6 h-6" />
+    </a>
+  </div>
   <aside>
     <p>Copyright © {new Date().getFullYear()} - All rights reserved</p>
   </aside>
