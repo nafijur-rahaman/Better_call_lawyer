@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image": "https://randomuser.me/api/portraits/men/45.jpg",
+    "image": "https://i.ibb.co/ksRyYzg5/pexels-mikhail-nilov-8729951.jpg",
     "name": "Barrister Tahmid Rahman",
     "speciality": "Criminal Law",
     "experience": "12 years",
@@ -11,7 +11,7 @@
   },
   {
     "id": 2,
-    "image": "https://randomuser.me/api/portraits/women/32.jpg",
+    "image": "https://i.ibb.co/C5DgPSHz/pexels-august-de-richelieu-4427425.jpg",
     "name": "Advocate Nusrat Jahan",
     "speciality": "Family Law",
     "experience": "8 years",
@@ -21,7 +21,7 @@
   },
   {
     "id": 3,
-    "image": "https://randomuser.me/api/portraits/men/21.jpg",
+    "image": "https://i.ibb.co/KjWPP9Hh/pexels-pranavdigwal-32976.jpg",
     "name": "Md. Arif Hossain",
     "speciality": "Property Law",
     "experience": "10 years",
@@ -41,7 +41,7 @@
   },
   {
     "id": 5,
-    "image": "https://randomuser.me/api/portraits/women/15.jpg",
+    "image": "https://i.ibb.co/b5TJw17k/pexels-august-de-richelieu-4427614.jpg",
     "name": "Barrister Mahjabeen Chowdhury",
     "speciality": "Immigration Law",
     "experience": "7 years",
@@ -51,7 +51,7 @@
   },
   {
     "id": 6,
-    "image": "https://randomuser.me/api/portraits/men/12.jpg",
+    "image": "https://i.ibb.co/GvbcJtTm/pexels-sora-shimazaki-5668775.jpg",
     "name": "Advocate Rafiq Ahmed",
     "speciality": "Tax Law",
     "experience": "9 years",
@@ -61,7 +61,7 @@
   },
   {
     "id": 7,
-    "image": "https://randomuser.me/api/portraits/women/55.jpg",
+    "image": "https://i.ibb.co/32PPYyt/pexels-august-de-richelieu-4427610.jpg",
     "name": "Advocate Shirin Sultana",
     "speciality": "Labour Law",
     "experience": "6 years",
@@ -71,7 +71,7 @@
   },
   {
     "id": 8,
-    "image": "https://randomuser.me/api/portraits/men/39.jpg",
+    "image": "https://i.ibb.co/KcSk4DjX/pexels-ono-kosuki-5648408.jpg",
     "name": "Md. Mizanur Rahman",
     "speciality": "Environmental Law",
     "experience": "5 years",
@@ -81,7 +81,7 @@
   },
   {
     "id": 9,
-    "image": "https://randomuser.me/api/portraits/women/44.jpg",
+    "image": "https://i.ibb.co/VYHym73Q/portrait-female-lawyer-formal-suit-with-clipboard.jpg",
     "name": "Advocate Ruma Khatun",
     "speciality": "Civil Litigation",
     "experience": "13 years",
@@ -91,7 +91,7 @@
   },
   {
     "id": 10,
-    "image": "https://randomuser.me/api/portraits/men/58.jpg",
+    "image": "https://i.ibb.co/Gfp3MhJq/mohamad-khosravi-ikjv-Pf-C3pb-I-unsplash.jpg",
     "name": "Barrister Anisur Rahman",
     "speciality": "Constitutional Law",
     "experience": "15 years",
@@ -101,7 +101,7 @@
   },
   {
     "id": 11,
-    "image": "https://randomuser.me/api/portraits/women/11.jpg",
+    "image": "https://i.ibb.co/8nZKbb9k/pexels-pavel-danilyuk-8111879.jpg",
     "name": "Advocate Tamanna Haque",
     "speciality": "Intellectual Property Law",
     "experience": "6 years",
@@ -111,7 +111,7 @@
   },
   {
     "id": 12,
-    "image": "https://randomuser.me/api/portraits/men/28.jpg",
+    "image": "https://i.ibb.co/6cC4MdrL/pexels-rdne-7841434.jpg",
     "name": "Advocate Shahriar Khan",
     "speciality": "Cyber Law",
     "experience": "4 years",

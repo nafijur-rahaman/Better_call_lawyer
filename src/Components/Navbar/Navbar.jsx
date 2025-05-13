@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Link, NavLink } from 'react-router';
 
 const Navbar = () => {
     return (
@@ -12,15 +12,17 @@ const Navbar = () => {
                     </div>
                     <div className="nav-links ">
                         <ul className="flex nav-items justify-center items-center gap-10 text-lg ">
-                      <Link to={"/"} ><li><button className='cursor-pointer'  >Home</button></li></Link>
-                      <Link to={'/bookings'} ><li><button className='cursor-pointer' >My-Bookings</button></li></Link>
-                      <Link to={'/blogs'} ><li><button className='cursor-pointer' >Blogs</button></li></Link>
-                      <Link to={'error'} ><li><button className='cursor-pointer' >Contact Us</button></li></Link>
+
+                    <NavLink to={'/'}><li><button className='cursor-pointer font-semibold text-lg hover:text-[#0EA106]' >Home</button></li></NavLink>
+                    <NavLink to={'/bookings'}><li><button className='cursor-pointer font-semibold text-lg hover:text-[#0EA106]' >My-Bookings</button></li></NavLink>
+                    <NavLink to={'/blogs'}><li><button className='cursor-pointer font-semibold text-lg hover:text-[#0EA106]' >Blogs</button></li></NavLink>
+                    <NavLink to={'/error'}><li><button className='cursor-pointer font-semibold text-lg hover:text-[#0EA106]' >Contact Us</button></li></NavLink>
                             
                             
                             
                         </ul>
                     </div>
+
 
                     <div className="contact-btn">
                    <Link to={'/error'}>

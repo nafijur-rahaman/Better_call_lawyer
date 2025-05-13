@@ -1,8 +1,17 @@
 import React from "react";
+import CountUp, { useCountUp } from 'react-countup';
 
 const Counter = () => {
+
+  useCountUp({
+    ref: 'counter',
+    end: 1234567,
+    enableScrollSpy: true,
+    scrollSpyDelay: 1000,
+  });  
   return (
     <div className="max-w-full xl:max-w-[1200px] 2xl:max-w-[1500px] mx-auto mt-10  mb-20">
+   
       <div className="heading">
         <h1 className="text-4xl font-bold text-center">
           We Provide Best Law Services
@@ -20,7 +29,7 @@ const Counter = () => {
               <img src="success-doctor.png" alt="" />
             </div>
             <div className="counter-elements">
-              <h1 className="text-3xl font-bold mt-2">199+</h1>
+              <h1 className="text-3xl font-bold mt-2"> <CountUp enableScrollSpy end={100} />+</h1>
               <p className="text-sm text-[#0F0F0F90] ">Total Lawyer</p>
             </div>
           </div>
@@ -29,7 +38,7 @@ const Counter = () => {
               <img src="success-patients.png" alt="" />
             </div>
             <div className="counter-elements">
-              <h1 className="text-3xl font-bold mt-2">199+</h1>
+              <h1 className="text-3xl font-bold mt-2"> <CountUp enableScrollSpy end={199} />+</h1>
               <p className="text-sm text-[#0F0F0F90] ">Total Lawyer</p>
             </div>
           </div>
@@ -38,7 +47,7 @@ const Counter = () => {
               <img src="success-review.png" alt="" />
             </div>
             <div className="counter-elements">
-              <h1 className="text-3xl font-bold mt-2">199+</h1>
+              <h1 className="text-3xl font-bold mt-2"> <CountUp enableScrollSpy end={300} /> +</h1>
               <p className="text-sm text-[#0F0F0F90] ">Total Lawyer</p>
             </div>
           </div>
@@ -47,7 +56,7 @@ const Counter = () => {
               <img src="success-staffs.png" alt="" />
             </div>
             <div className="counter-elements">
-              <h1 className="text-3xl font-bold mt-2">199+</h1>
+              <h1 className="text-3xl font-bold mt-2"> <CountUp enableScrollSpy end={50} /> +</h1>
               <p className="text-sm text-[#0F0F0F90] ">Total Lawyer</p>
             </div>
           </div>

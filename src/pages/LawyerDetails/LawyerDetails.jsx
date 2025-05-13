@@ -8,19 +8,20 @@ const LawyerDetails = () => {
   const [available, setAvailable] = useState(false);
   let navigate = useNavigate();
   const data = useLoaderData();
-  const { id } = useParams();
-  const lawyerId = parseInt(id);
-  const lawyer = data.find((lawyer) => lawyer.id === lawyerId);
+  const { license_number } = useParams();
+  const lawyerId = license_number;
+  const lawyer = data.find((lawyer) => lawyer.license_number === lawyerId);
+  // console.log(lawyer);
   const {
+    id,
     image,
     name,
     speciality,
     availability,
     experience,
-    license_number,
     fee,
   } = lawyer;
-  //   console.log(lawyer);
+
 
   useEffect(() => {
     const presentDayNum = new Date().getDay();
@@ -51,12 +52,7 @@ const LawyerDetails = () => {
   });
 
   const handleAppointment = (id) => {
-    if (available === false) {
-      Toast.fire({
-        icon: "error",
-        title: "Lawyer is not available today",
-      });
-    } else {
+
       if (setData(id) === false) {
         Toast.fire({
           icon: "error",
@@ -70,7 +66,7 @@ const LawyerDetails = () => {
 
         navigate("/bookings");
       }
-    }
+    
   };
 
   return (
@@ -136,15 +132,11 @@ const LawyerDetails = () => {
           <div className="availability flex justify-between  items-center">
             <h1 className="text-xl font-bold">Availability</h1>
             <div className="flex gap-5">
-              {available ? (
+
                 <h2 className="text-sm bg-[#09982F20] px-5 py-1  rounded-2xl text-[#09982F]">
                   Lawyer Available Today
                 </h2>
-              ) : (
-                <h2 className="text-sm bg-[#ff000020] px-5 py-1  rounded-2xl text-[#ff0000]">
-                  Lawyer Not Available today
-                </h2>
-              )}
+             
             </div>
           </div>
 
@@ -158,7 +150,7 @@ const LawyerDetails = () => {
           </div>
 
           <div
-            onClick={() => handleAppointment(lawyerId)}
+            onClick={() => handleAppointment(id)}
             className="booking-card  text-center "
           >
             <button className="bg-[#0EA106] w-full px-5 py-2  rounded-2xl cursor-pointer font-semibold text-white mt-5">

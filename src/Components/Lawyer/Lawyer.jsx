@@ -20,7 +20,7 @@ const {image,name,speciality,experience,license_number,fee}= lawyer;
             <h1 className='font-bold text-xl py-1'>{name}</h1>
             <h2 className='text-lg  text-[#0F0F0F60]'>{speciality}</h2>
             <h2 className='text-lg text-[#0F0F0F70]'>License No:  {license_number}</h2>
-            <Link reloadDocument to={`/lawyer-details/${lawyer.id}`}>
+            <Link reloadDocument to={`/lawyer-details/${lawyer.license_number}`}>
                 <button className='border border-[#176AE520] text-[#176AE5]  font-semibold cursor-pointer w-full py-1 rounded-lg '>View Details</button>
             </Link>
         </div>
