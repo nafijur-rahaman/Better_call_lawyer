@@ -13,10 +13,50 @@ const Navbar = () => {
                     <div className="nav-links ">
                         <ul className="flex nav-items justify-center items-center gap-10 text-lg ">
 
-                    <NavLink to={'/'}><li><button className='cursor-pointer font-semibold text-lg hover:text-[#0EA106]' >Home</button></li></NavLink>
-                    <NavLink to={'/bookings'}><li><button className='cursor-pointer font-semibold text-lg hover:text-[#0EA106]' >My-Bookings</button></li></NavLink>
-                    <NavLink to={'/blogs'}><li><button className='cursor-pointer font-semibold text-lg hover:text-[#0EA106]' >Blogs</button></li></NavLink>
-                    <NavLink to={'/error'}><li><button className='cursor-pointer font-semibold text-lg hover:text-[#0EA106]' >Contact Us</button></li></NavLink>
+<NavLink 
+  to="/"
+  className={({ isActive }) =>
+    isActive 
+      ? 'cursor-pointer font-semibold text-lg  underline decoration-[#0EA106] underline-offset-8' 
+      : 'cursor-pointer font-semibold text-lg hover:text-[#0EA106]'
+  }
+>
+  Home
+</NavLink>
+
+<NavLink 
+  to="/bookings"
+  className={({ isActive }) =>
+    isActive 
+      ? 'cursor-pointer font-semibold text-lg underline decoration-[#0EA106] underline-offset-8 ' 
+      : 'cursor-pointer font-semibold text-lg hover:text-[#0EA106]'
+  }
+>
+  My-Bookings
+</NavLink>
+
+<NavLink 
+  to="/blogs"
+  className={({ isActive }) =>
+    isActive 
+      ? 'cursor-pointer font-semibold text-lgunderline decoration-[#0EA106] underline-offset-8 underline' 
+      : 'cursor-pointer font-semibold text-lg hover:text-[#0EA106]'
+  }
+>
+  Blogs
+</NavLink>
+
+<NavLink 
+  to="/error"
+  className={({ isActive }) =>
+    isActive 
+      ? 'cursor-pointer font-semibold text-lgunderline decoration-[#0EA106] underline-offset-8 underline' 
+      : 'cursor-pointer font-semibold text-lg hover:text-[#0EA106]'
+  }
+>
+  Contact Us
+</NavLink>
+
                             
                             
                             
