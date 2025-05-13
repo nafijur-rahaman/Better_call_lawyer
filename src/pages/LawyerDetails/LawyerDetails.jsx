@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { useLoaderData, useParams } from "react-router";
+import { useLoaderData, useNavigate, useParams } from "react-router";
+import { getData, setData } from "../../Utils/SetData";
+import Swal from "sweetalert2";
 
 const LawyerDetails = () => {
+  
   const [available, setAvailable] = useState(false);
+  let navigate = useNavigate();
   const data = useLoaderData();
   const { id } = useParams();
   const lawyerId = parseInt(id);
@@ -34,6 +38,40 @@ const LawyerDetails = () => {
       setAvailable(true);
     }
   });
+  const Toast = Swal.mixin({
+    toast: true,
+    position: "top-end",
+    showConfirmButton: false,
+    timer: 3000,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+      toast.onmouseenter = Swal.stopTimer;
+      toast.onmouseleave = Swal.resumeTimer;
+    },
+  });
+
+  const handleAppointment = (id) => {
+    if (available === false) {
+      Toast.fire({
+        icon: "error",
+        title: "Lawyer is not available today",
+      });
+    } else {
+      if (setData(id) === false) {
+        Toast.fire({
+          icon: "error",
+          title: "Lawyer Already Booked",
+        });
+      } else {
+        Toast.fire({
+          icon: "success",
+          title: "Lawyer Booked Successfully",
+        });
+
+        navigate("/bookings");
+      }
+    }
+  };
 
   return (
     <div className="max-w-full xl:max-w-[1200px] 2xl:max-w-[1500px] mx-auto">
@@ -103,7 +141,7 @@ const LawyerDetails = () => {
                   Lawyer Available Today
                 </h2>
               ) : (
-                <h2 className="text-sm bg-[#09982F20] px-5 py-1  rounded-2xl text-[#09982F]">
+                <h2 className="text-sm bg-[#ff000020] px-5 py-1  rounded-2xl text-[#ff0000]">
                   Lawyer Not Available today
                 </h2>
               )}
@@ -119,9 +157,14 @@ const LawyerDetails = () => {
             </p>
           </div>
 
-         <div className="booking-card  text-center ">
-            <button className="bg-[#0EA106] w-full px-5 py-2  rounded-2xl cursor-pointer font-semibold text-white mt-5">Book Appointment Now</button>
-         </div> 
+          <div
+            onClick={() => handleAppointment(lawyerId)}
+            className="booking-card  text-center "
+          >
+            <button className="bg-[#0EA106] w-full px-5 py-2  rounded-2xl cursor-pointer font-semibold text-white mt-5">
+              Book Appointment Now
+            </button>
+          </div>
         </div>
       </div>
     </div>
