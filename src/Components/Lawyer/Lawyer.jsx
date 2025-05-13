@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 
 
 const Lawyer = ({lawyer}) => {
@@ -5,7 +6,8 @@ const Lawyer = ({lawyer}) => {
 
 const {image,name,speciality,experience,license_number,fee}= lawyer;
     return (
-        <div className='lawyer-card flex gap-10 p-5 border border-[#0F0F0F30] w-[550px] rounded-xl'>
+ 
+            <div className='lawyer-card flex gap-10 p-5 border border-[#0F0F0F30] w-[550px] rounded-xl'>
         <div className="img rounded-lg">
             <img className='w-40 h-40 rounded-xl' src={image} alt="" />
         </div>
@@ -18,7 +20,9 @@ const {image,name,speciality,experience,license_number,fee}= lawyer;
             <h1 className='font-bold text-xl py-1'>{name}</h1>
             <h2 className='text-lg  text-[#0F0F0F60]'>{speciality}</h2>
             <h2 className='text-lg text-[#0F0F0F70]'>License No:  {license_number}</h2>
-            <button className='border border-[#176AE520] text-[#176AE5]  font-semibold cursor-pointer w-full py-1 rounded-lg '>View Details</button>
+            <Link reloadDocument to={`/lawyer-details/${lawyer.id}`}>
+                <button className='border border-[#176AE520] text-[#176AE5]  font-semibold cursor-pointer w-full py-1 rounded-lg '>View Details</button>
+            </Link>
         </div>
         </div>
     );

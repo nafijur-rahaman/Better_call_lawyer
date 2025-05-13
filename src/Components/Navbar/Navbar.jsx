@@ -7,7 +7,7 @@ const Navbar = () => {
             <nav className='max-w-full xl:max-w-[1200px] 2xl:max-w-[1500px] mx-auto'>
                 <div className="logo-container flex gap-5 justify-between items-center py-5">
                     <div className="logo-img flex justify-center items-center gap-3">
-                        <img src="./logo.png" alt="" />
+                        <img src="/logo.png" alt="" />
                         <Link to={"/"}><h1 className='text-2xl font-bold'>Better Call Lawyer</h1></Link>
                     </div>
                     <div className="nav-links ">

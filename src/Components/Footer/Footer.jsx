@@ -5,7 +5,7 @@ const Footer = () => {
     return (
 <footer className="footer flex flex-col items-center bg-black text-white p-10 ">
   <div className="footer-logo flex items-center gap-3">
-    <img src="./logo-footer.png" alt="Logo" className="w-10 h-10" />
+    <img src="/logo-footer.png" alt="Logo" className="w-10 h-10" />
     <h1 className="text-2xl font-bold">Better Call Lawyer</h1>
   </div>
 
@@ -17,7 +17,7 @@ const Footer = () => {
   </ul>
 
 
-<div className="w-full h-px border-t border-dashed border-[#FFFFFF20] my-4"></div>
+<div className="w-full h-px border-t border-dashed border-[#f7f7f730] my-4"></div>
 
   <aside>
     <p>Copyright © {new Date().getFullYear()} - All rights reserved</p>
